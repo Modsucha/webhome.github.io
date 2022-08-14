@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@507&display=swap');
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+.container
+{
+    height: 100vh;
+    width: 100%;
+}
+.container header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(./img/room.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+.container .navbar 
+{
+    display: flex;
+    justify-content: space-around;
+}
+.container .navbar .logo,
+.container .navbar .day
+{
+    flex-basis: 20%;
+}
+
+.container .navbar .logo .logo-text
+{
+    text-align: center;
+    width: 270px;
+    height: 240px;
+    padding-right: 20px;
+    background-color: #191919;
+    font-size: 26px;
+    color: #fff;
+    padding-top: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    z-index: 3;
+    position: relative;
+}
+.container .navbar .logo .logo-number
+{
+    color: #FA7D09;
+    font-size: 50px;
+    z-index: 4;
+    position: absolute;
+    top: 10%;
+    left: 5rem;
+}
+.container .navbar .logo .logo-number .sub
+{
+    font-size: 12px;
+    color: #666;
+    position: absolute;
+    top: 10%;
+    left: 110%;
+    width: 100px;
+}
+.container .navbar .logo .cil
+{
+    width: 270px;
+    height: 250px;
+    background-color: #191919;
+    opacity: 0.7;
+    z-index: 1;
+    position: relative;
+    top: -45%;
+
+}
+.container .navbar .day{
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+}
+.container .navbar .link
+{
+    flex-grow: 1;
+}
+.container .navbar .link .item
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+.container .navbar .link .item .link-item a
+{
+    padding: 0 25px;
+    color: #fff;
+}
+
+/* ====== content ====== */
+.content{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -30%;
+}
+.content .socal{
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    color: #fff;
+    margin-right: 35px;
+}
+.content .socal .welcome .items
+{
+    letter-spacing: 6px;
+    transform: rotate(270deg);
+    width: max-content;
+    margin-bottom: 50%;
+}
+.line{
+    height: 50px;
+    width: 1px;
+    background-color: #fff;
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+.content .socal i
+{
+    margin: 14px 0;
+}
+.content .concert{
+    flex-basis: 90%;
+    margin-left: 20%;
+    margin-right: 19%;
+    animation: textCon .4s linear 0.6s backwards;
+}
+
+@keyframes textCon
+{
+     0%{
+        opacity: 0;
+        transform: rotatey(-30%);
+     }
+}
+.content .concert .text-1 p
+{
+    height: 100px;
+    text-align: end;
+    color: #fff;
+    padding-bottom: 18px;
+}
+.content .concert .text h3
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    letter-spacing: 10px;
+    padding: 15px 0;
+    text-align: end;
+    color: #fff;
+    text-transform: uppercase;
+}
+.content .concert .text a
+{   
+    background-color: #FA7D09;
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    padding-right: 25px;
+    margin-left: 82%;
+    border-radius: 25px;
+
+}
+.btn1{
+    padding: 10px;
+}
+.btn1:hover{
+    opacity: 0.8;
+}
+.fro
+{
+    background-color: #191919;
+    height: 75%;
+    width: 8%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: -85%;
+}
+
+/* ===== main ====== */
+.row1
+{
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.row1 .head
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    height: 240px;
+    margin-top: -11%;
+    margin-bottom: 3%;
+}
+.row1 .flexcontainer
+{
+    width: 840px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+.row1 .flexcontainer .content
+{
+    width: 33.33%;
+    flex-direction: column;
+    color: #fff;
+}
+.row1 .flexcontainer .content h4
+{
+    font-weight: 600;
+    font-size: 26px;
+    padding-bottom: 1rem;
+}
+.row1 .flexcontainer .content p{
+    font-size: 14px;
+    color: #7E7474;
+    letter-spacing: 2px;
+}
+.row1 .flexcontainer .secondary
+{
+    width: 33.33%;
+    flex-direction: column;
+}
+.row1 .flexcontainer .secondary
+{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(./img/vertical-low-angle-shot-white-concrete-building.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -26%;
+}
+.row1 .flexcontainer .sidebar
+{
+    width: 33.33%;
+    position: relative;
+    top: -26%;
+}
+.row1 .flexcontainer .primary
+{
+    width: 33.33%;
+    position: relative;
+    top: -28%;
+    padding-left: 30px;
+}
+.row1 .flexcontainer .primary .hlop
+{
+    color: #fff;
+    font-size: 20px;
+    text-transform: lowercase;
+    width: 120px;
+}
+.row1 .flexcontainer .primary i
+{
+    font-size: 30px;
+    color: #7E7474;
+    margin: 10px 0;
+}
+.row1 .flexcontainer .primary h4
+{
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.container-1
+{
+    height: 80vh;
+    display: flex;
+    width: 100%;
+    background-color: #191919;
+}
+.container-1 .slider
+{
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+.container-1 .slider .title
+{
+    width: 180px;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+.container-1 .slider .sub-text
+{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    width: max-content;
+    position: absolute;
+    bottom: 10%;
+    color: aliceblue;
+    font-size: 14px;
+}
